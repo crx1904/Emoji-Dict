@@ -10,34 +10,22 @@ import UIKit
 
 class DefViewController: UIViewController {
 
-    var selected = "NO EMOJI"
+    var selected = Emoji()
     
     @IBOutlet weak var defLabel: UILabel!
     @IBOutlet weak var emoLabel: UILabel!
+    @IBOutlet weak var catLabel: UILabel!
+    @IBOutlet weak var yearLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        emoLabel.text = selected
-        defLabel.text = "DEFINITION"
-        
-        if selected == "😀" {
-            defLabel.text = "lachend"
-        }
-        if selected == "😇" {
-            defLabel.text = "unschuldig"
-        }
-        if selected == "😜" {
-            defLabel.text = "just kidding"
-        }
-        if selected == "🧐" {
-            defLabel.text = "misstrauisch/neugierig"
-        }
-        if selected == "😩" {
-            defLabel.text = "erschöpft/enttäuscht"
-        }
+        emoLabel.text = selected.symbol
+        defLabel.text = selected.definition
+        catLabel.text = "Kategorie: \(selected.category)"
+        yearLabel.text = "Jahr: \(selected.year)"
         
     }
     

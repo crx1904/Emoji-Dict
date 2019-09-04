@@ -50,31 +50,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2z-vf-ASH">
-                                <rect key="frame" x="177.5" y="547" width="59.5" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="💒" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EbL-MS-hg6">
                                 <rect key="frame" x="98" y="282" width="218" height="239"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="200"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2z-vf-ASH">
+                                <rect key="frame" x="177.5" y="547" width="59.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: Smiley" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xHY-ka-Psk">
+                                <rect key="frame" x="115" y="612" width="184" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="BirthYear: 2010" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQF-4d-6cv">
+                                <rect key="frame" x="125" y="686" width="165" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="aQF-4d-6cv" firstAttribute="top" secondItem="xHY-ka-Psk" secondAttribute="bottom" constant="8" id="0P1-cA-VbV"/>
                             <constraint firstItem="N2z-vf-ASH" firstAttribute="centerX" secondItem="koW-13-XSg" secondAttribute="centerX" id="8JD-Pv-78p"/>
                             <constraint firstItem="EbL-MS-hg6" firstAttribute="top" secondItem="7Uh-tv-Syz" secondAttribute="top" constant="194" id="IdY-j7-KPC"/>
+                            <constraint firstItem="xHY-ka-Psk" firstAttribute="top" secondItem="N2z-vf-ASH" secondAttribute="bottom" constant="35" id="YdI-ll-09K"/>
                             <constraint firstItem="N2z-vf-ASH" firstAttribute="top" secondItem="EbL-MS-hg6" secondAttribute="bottom" constant="26" id="bM0-Nq-Abd"/>
+                            <constraint firstItem="aQF-4d-6cv" firstAttribute="centerX" secondItem="koW-13-XSg" secondAttribute="centerX" id="esO-ug-tN1"/>
+                            <constraint firstItem="xHY-ka-Psk" firstAttribute="centerX" secondItem="koW-13-XSg" secondAttribute="centerX" id="g7C-Ji-6AD"/>
                             <constraint firstItem="EbL-MS-hg6" firstAttribute="centerX" secondItem="koW-13-XSg" secondAttribute="centerX" id="hvd-rf-SuY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7Uh-tv-Syz"/>
                     </view>
                     <connections>
+                        <outlet property="catLabel" destination="xHY-ka-Psk" id="OAK-ka-gSX"/>
                         <outlet property="defLabel" destination="N2z-vf-ASH" id="3pG-0f-vY4"/>
                         <outlet property="emoLabel" destination="EbL-MS-hg6" id="l5g-cV-ZXg"/>
+                        <outlet property="yearLabel" destination="aQF-4d-6cv" id="dGN-hU-0Sb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VlG-8Y-yE2" userLabel="First Responder" sceneMemberID="firstResponder"/>

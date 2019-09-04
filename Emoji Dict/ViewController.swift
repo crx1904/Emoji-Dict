@@ -12,7 +12,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     @IBOutlet var tableView: UITableView!
     
-    var emoji = ["😀","😇","😜","🧐","😩"]
+    var emoji : [Emoji] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +20,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
         tableView.dataSource = self
         tableView.delegate = self
-        
+        emoji = makeEmojiArray()
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -30,7 +30,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         print(indexPath.row)
         let cell = UITableViewCell()
-        cell.textLabel?.text = emoji[indexPath.row]
+        let select = emoji[indexPath.row]
+        cell.textLabel?.text = select.symbol
         return cell
     }
     
@@ -42,8 +43,43 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let defViewCon = segue.destination as! DefViewController
-        defViewCon.selected = sender as! String
+        defViewCon.selected = sender as! Emoji
         
+    }
+    
+    func makeEmojiArray() -> [Emoji] {
+        let emoji1 = Emoji()
+        emoji1.symbol = "😀"
+        emoji1.year = 2010
+        emoji1.category = "Smiley"
+        emoji1.definition = "lachend"
+        
+        let emoji2 = Emoji()
+        emoji2.symbol = "😇"
+        emoji2.year = 2009
+        emoji2.category = "Smiley"
+        emoji2.definition = "unschuldig"
+        
+        let emoji3 = Emoji()
+        emoji3.symbol = "😜"
+        emoji3.year = 1999
+        emoji3.category = "Smiley"
+        emoji3.definition = "scherzend"
+        
+        let emoji4 = Emoji()
+        emoji4.symbol = "🧐"
+        emoji4.year = 2010
+        emoji4.category = "Smiley"
+        emoji4.definition = "skeptisch"
+        
+        let emoji5 = Emoji()
+        emoji5.symbol = "😩"
+        emoji5.year = 2006
+        emoji5.category = "Smiley"
+        emoji5.definition = "erschöpft"
+        
+        return [emoji1, emoji2, emoji3, emoji4, emoji5]
+    
     }
     
 }

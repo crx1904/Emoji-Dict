@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1446D3CB231FCDEC009AF983 /* DefViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1446D3CA231FCDEC009AF983 /* DefViewController.swift */; };
+		1446D3CD231FE6CB009AF983 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1446D3CC231FE6CB009AF983 /* Emoji.swift */; };
 		14D7998A231EF035003A0BB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D79989231EF035003A0BB2 /* AppDelegate.swift */; };
 		14D7998C231EF035003A0BB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D7998B231EF035003A0BB2 /* ViewController.swift */; };
 		14D7998F231EF035003A0BB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14D7998D231EF035003A0BB2 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		1446D3CA231FCDEC009AF983 /* DefViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefViewController.swift; sourceTree = "<group>"; };
+		1446D3CC231FE6CB009AF983 /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
 		14D79986231EF035003A0BB2 /* Emoji Dict.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Emoji Dict.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14D79989231EF035003A0BB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14D7998B231EF035003A0BB2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				14D79989231EF035003A0BB2 /* AppDelegate.swift */,
 				14D7998B231EF035003A0BB2 /* ViewController.swift */,
+				1446D3CC231FE6CB009AF983 /* Emoji.swift */,
 				1446D3CA231FCDEC009AF983 /* DefViewController.swift */,
 				14D7998D231EF035003A0BB2 /* Main.storyboard */,
 				14D79990231EF03A003A0BB2 /* Assets.xcassets */,
@@ -140,6 +143,7 @@
 			files = (
 				1446D3CB231FCDEC009AF983 /* DefViewController.swift in Sources */,
 				14D7998C231EF035003A0BB2 /* ViewController.swift in Sources */,
+				1446D3CD231FE6CB009AF983 /* Emoji.swift in Sources */,
 				14D7998A231EF035003A0BB2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
